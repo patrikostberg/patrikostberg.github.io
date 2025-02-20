@@ -1,0 +1,185 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#menu {
+  /* position: fixed; */
+  position: sticky;
+  top: 0px;
+  background: #fafafa;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #555555;
+  margin-bottom: 1em;
+}
+
+#menu .title {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.8em;
+}
+
+#menu nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+#menu nav ul li {
+  float: left;
+}
+
+#menu nav ul li a {
+  display: block;
+  color: #0f0f0f;
+  text-align: center;
+  padding: 0.8em;
+  text-decoration: none;
+}
+
+#menu nav ul li a:hover {
+  color: #215175;
+}
+
+#menu p {
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropzone {
+  border: 2px dashed;
+  text-align: center;
+  margin: 1em 0 1em 0;
+  padding: 0 1em 0 1em;
+  background: #ededed;
+  font-size: 2em;
+}
+
+.file-selector {
+  text-align: center;
+}
+
+.file-selector > input[type=file] {
+  display: none;
+}
+
+.file-selector > .file-upload-button {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.viewer {
+  width: 70%;
+}
+
+.viewer .message-info {
+  background-color: #cccccc;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.viewer ul {
+  list-style-type: none;
+  padding-left: 16px;
+}
+
+.viewer ul.hidden {
+  list-style-type: none;
+  padding-left: 16px;
+}
+
+.viewer li > div {
+  margin: 4px 0px 0px 4px;
+  padding: 4px 0px 4px 4px;
+  border-radius: 8px;
+}
+
+.viewer li > div.field {
+  background-color: #e5e3e3;
+  border: 1px solid black;
+}
+
+.viewer li > div.field:hover {
+  background-color: #ececec;
+}
+
+.viewer li > div.component {
+  background-color: #e5e3e3;
+  border: 1px solid black;
+}
+
+.viewer li > div.component:hover {
+  background-color: #ececec;
+}
+
+.viewer li > div.group {
+  background-color: #e5e3e3;
+  border: 1px solid black;
+}
+
+.viewer li > div.group:hover {
+  background-color: #ececec;
+}
+
+.viewer li > div.sub-list {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.viewer li > div > span {
+  font-size: 0.8em;
+  padding: 0.15em;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
+}
+
+.viewer li > div > span.field {
+  background-color: #a4c0d5;
+}
+
+.viewer li > div > span.component {
+  background-color: #aea4d5;
+}
+
+.viewer li > div > span.group {
+  background-color: #a4d5cf;
+}
+
+.viewer li > div > span.field {
+  background-color: #a4c0d5;
+}
+
+.viewer li > div > span.component {
+  background-color: #aea4d5;
+}
+
+.viewer li > div > span.required {
+  background-color: #f16767;
+}
+
+.viewer li > div > span.field-type {
+  background-color: #bbe7f4;
+  float: right;
+  margin-right: 1em;
+}
+
+.message-selector {
+  width: 100%;
+  text-align: center;
+}
