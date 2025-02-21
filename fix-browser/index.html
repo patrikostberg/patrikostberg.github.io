@@ -7,8 +7,8 @@
   <title>FIX Browser</title>
   
 <script type="module">
-import init, * as bindings from '/fix_browser-c4d30a608f18b350.js';
-const wasm = await init({ module_or_path: '/fix_browser-c4d30a608f18b350_bg.wasm' });
+import init, * as bindings from '/fix-browser/fix_browser-d07dd0784cbe6b63.js';
+const wasm = await init({ module_or_path: '/fix-browser/fix_browser-d07dd0784cbe6b63_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -17,6 +17,6 @@ window.wasmBindings = bindings;
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
-  <link rel="stylesheet" href="index-1da4f0643ffc6ea8.css" integrity="sha384&#x2D;TCaQNWbFcrZSE1zUW&#x2F;FN6steY5D2Zei1dzGHWyl&#x2F;&#x2B;X8s8h9EBV2Cmpk5QY7LL1bb"/>
-<link rel="modulepreload" href="fix_browser-c4d30a608f18b350.js" crossorigin="anonymous" integrity="sha384-ehhnV1Jw6w+8KzvnS+1V0loNc4f35F8wlkaI42V5mXuFwTegicq6H9HR4Ak5+Lfz"><link rel="preload" href="fix_browser-c4d30a608f18b350_bg.wasm" crossorigin="anonymous" integrity="sha384-+MwROaJaA6cNSsDqNL9tsZXjiyhlZQEcG5UFrByl1a8NhP6Am8HMcQptqcsL9/VN" as="fetch" type="application/wasm"></head>
+  <link rel="stylesheet" href="/fix-browser/index-1da4f0643ffc6ea8.css" integrity="sha384&#x2D;TCaQNWbFcrZSE1zUW&#x2F;FN6steY5D2Zei1dzGHWyl&#x2F;&#x2B;X8s8h9EBV2Cmpk5QY7LL1bb"/>
+<link rel="modulepreload" href="/fix-browser/fix_browser-d07dd0784cbe6b63.js" crossorigin="anonymous" integrity="sha384-yYP8hL5cGC8tiTi4KNReoEu9DC6k9BaFTid08aad8YUqXJ3k1YYUdly2q2bGTKsI"><link rel="preload" href="/fix-browser/fix_browser-d07dd0784cbe6b63_bg.wasm" crossorigin="anonymous" integrity="sha384-fT72hX+XSJWENKHgC6C/AZb+SR3KlErITHs1Cl56+bdmngTBuAqKsi+S4eXZlnWz" as="fetch" type="application/wasm"></head>
 </html>
