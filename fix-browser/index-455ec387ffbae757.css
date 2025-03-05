@@ -6,7 +6,6 @@ body {
 }
 
 #menu {
-  /* position: fixed; */
   position: sticky;
   top: 0px;
   background: #fafafa;
@@ -117,6 +116,10 @@ body {
   background-color: #ececec;
 }
 
+.viewer li > div.field:has(.enums):hover {
+  cursor: pointer;
+}
+
 .viewer li > div.component {
   background-color: #e5e3e3;
   border: 1px solid black;
@@ -124,6 +127,7 @@ body {
 
 .viewer li > div.component:hover {
   background-color: #ececec;
+  cursor: pointer;
 }
 
 .viewer li > div.group {
@@ -133,6 +137,7 @@ body {
 
 .viewer li > div.group:hover {
   background-color: #ececec;
+  cursor: pointer;
 }
 
 .viewer li > div.sub-list {
@@ -142,7 +147,22 @@ body {
   transition: max-height 0.2s ease-out;
 }
 
-.viewer li > div > span {
+.viewer li > div.field > div.enums {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.viewer li > div.field > div.enums > table {
+  margin: 0.5em;
+}
+
+.viewer li > div.field > div.enums > table > tbody > tr:hover {
+  background-color: #c4ccd2;
+}
+
+.viewer li > div span {
   font-size: 0.8em;
   padding: 0.15em;
   border-radius: 0.3em;
@@ -173,10 +193,17 @@ body {
   background-color: #f16767;
 }
 
-.viewer li > div > span.field-type {
-  background-color: #bbe7f4;
+.viewer li > div > span.type-info {
   float: right;
   margin-right: 1em;
+}
+
+.viewer li > div span.field-type {
+  background-color: #bbe7f4;
+}
+
+.viewer li > div span.enum {
+  background-color: #ccfbb4;
 }
 
 .message-selector {
