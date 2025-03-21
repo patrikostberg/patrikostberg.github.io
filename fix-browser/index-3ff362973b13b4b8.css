@@ -84,6 +84,29 @@ body {
   width: 70%;
 }
 
+.viewer ul.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.viewer ul.tabs > li {
+  padding: 0.5em 1em;
+}
+
+.viewer ul.tabs > li:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+  border-radius: 0.3em;
+}
+
+.viewer .split {
+  display: flex;
+}
+
+.viewer .split > .split-half {
+  width: 50%;
+}
+
 .viewer .message-info {
   background-color: #cccccc;
   border-radius: 0.5em;
@@ -162,48 +185,95 @@ body {
   background-color: #c4ccd2;
 }
 
-.viewer li > div span {
+.viewer li > div > span.field {
   font-size: 0.8em;
   padding: 0.15em;
   border-radius: 0.3em;
   margin-left: 0.5em;
-}
-
-.viewer li > div > span.field {
   background-color: #a4c0d5;
 }
 
 .viewer li > div > span.component {
+  font-size: 0.8em;
+  padding: 0.15em;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
   background-color: #aea4d5;
 }
 
 .viewer li > div > span.group {
+  font-size: 0.8em;
+  padding: 0.15em;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
   background-color: #a4d5cf;
 }
 
 .viewer li > div > span.field {
+  font-size: 0.8em;
+  padding: 0.15em;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
   background-color: #a4c0d5;
 }
 
 .viewer li > div > span.component {
+  font-size: 0.8em;
+  padding: 0.15em;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
   background-color: #aea4d5;
 }
 
 .viewer li > div > span.required {
+  font-size: 0.8em;
+  padding: 0.15em;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
   background-color: #f16767;
 }
 
-.viewer li > div > span.type-info {
-  float: right;
-  margin-right: 1em;
-}
-
 .viewer li > div span.field-type {
+  font-size: 0.8em;
+  padding: 0.15em;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
   background-color: #bbe7f4;
 }
 
 .viewer li > div span.enum {
+  font-size: 0.8em;
+  padding: 0.15em;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
   background-color: #ccfbb4;
+}
+
+.viewer li > div > span.right-side {
+  float: right;
+  margin-right: 1em;
+}
+
+.viewer div.field-details > div.enums > table > thead > tr > th:nth-child(1) {
+  width: 10%;
+}
+
+.viewer div.field-details > div.enums > table > thead > tr > th:nth-child(2) {
+  width: 90%;
+}
+
+.viewer div.field-details > div.enums > table > tbody > tr > td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.viewer div.field-details > div.enums > table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.field-details {
+  margin: 1em;
 }
 
 .message-selector {
