@@ -274,6 +274,8 @@ body {
 
 .field-details {
   margin: 1em;
+  position: sticky;
+  top: 5em;
 }
 
 .message-selector {
